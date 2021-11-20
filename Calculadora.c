@@ -1,6 +1,7 @@
 //Bibliotecas
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 
 //Biblioteca de Funciones
 #include "menu.h"
@@ -8,25 +9,31 @@
 #include "FuncionResta.h"
 #include "FuncionMultiplicacion.h"
 #include "FuncionDivision.h"
+#include "FuncionFactorial.h"
+
+//COLORES 
+
+#define BLUE
 
 //Funciones
 int menu();
-int sumarNumeros(int A,int B);
+void sumarNumeros(float A,float B);
 int restarNumeros(int A,int B);
-int dividirNumeros(int A,int B);
+void dividirNumeros(float A,float B);
 int multiplicarNumeros(int A,int B);
+int factoreal(int A, int B);
 
 
 //Main
 int main(){
     char loop='T';
     int opcion= 0 ;
-    int A= 0;
-    int B= 0;
+    float A= 0;
+    float B= 0;
     printf("Ingrese el primer numero: ");
-    scanf("%d",&A);
+    scanf("%f",&A);
     printf("Ingrese el segundo numero: ");
-    scanf("%d",&B);
+    scanf("%f",&B);
 
     while (loop =='T'){
         menu();
@@ -46,7 +53,7 @@ int main(){
             multiplicarNumeros(A,B);
             break;
         case 5 :
-            /* code */
+            factoreal(A,B);
             break;
         case 6 :
             sumarNumeros(A,B);
@@ -59,8 +66,7 @@ int main(){
             break;
         default:
                 printf("Opcion ingresada incorrecta, Seleccione una opcion correcta o la opcion 7 para salir.");
-        }
-        
+        }       
     }
   return 0;
 

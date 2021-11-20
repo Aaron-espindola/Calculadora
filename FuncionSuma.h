@@ -1,6 +1,6 @@
-int sumarNumeros(int A,int B){
+void sumarNumeros(float A,float B){
     printf("Funcion Suma: \n");
 
-    int sumaNumeros= A+B;
-    printf("La suma de los numeras da como resultado: %d \n",sumaNumeros);
+    float sumaNumeros= A+B;
+    printf("La suma de los numeras da como resultado: %2.2f \n",sumaNumeros);
 }
