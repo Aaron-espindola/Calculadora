@@ -5,37 +5,53 @@
 
 //Biblioteca de Funciones
 #include "menu.h"
+#include "FuncionPresentacion.h"
 #include "FuncionSuma.h"
 #include "FuncionResta.h"
 #include "FuncionMultiplicacion.h"
 #include "FuncionDivision.h"
 #include "FuncionFactorial.h"
+//#include "FuncionIngresarValor.h"
 
 //COLORES 
 
-#define BLUE
+
 
 //Funciones
 int menu();
-void sumarNumeros(float A,float B);
+float sumarNumeros(float A,float B);
 int restarNumeros(int A,int B);
 void dividirNumeros(float A,float B);
 int multiplicarNumeros(int A,int B);
 int factoreal(int A, int B);
+void presentacion();
+//float ingresarValores(float A,float B );
 
 
 //Main
 int main(){
+    
     char loop='T';
     int opcion= 0 ;
     float A= 0;
     float B= 0;
-    printf("Ingrese el primer numero: ");
+    
+    presentacion();
+
+    printf("|***********************************|\n");
+    printf("|*| Ingrese el primer Valor:      |*|\n");
+    printf("|***********************************|\n");
     scanf("%f",&A);
-    printf("Ingrese el segundo numero: ");
+
+    printf("|***********************************|\n");
+    printf("|*| Ingrese el segundo Valor:     |*|\n");
+    printf("|***********************************|\n");
     scanf("%f",&B);
 
+    
+
     while (loop =='T'){
+
         menu();
         scanf("%d", &opcion);
         switch (opcion){
@@ -60,14 +76,13 @@ int main(){
             restarNumeros(A,B);
             dividirNumeros(A,B);
             multiplicarNumeros(A,B);
+            factoreal(A,B);
             break;
         case 7 :
             loop='F';
             break;
         default:
-                printf("Opcion ingresada incorrecta, Seleccione una opcion correcta o la opcion 7 para salir.");
-        }       
-    }
-  return 0;
-
+                printf("Opcion ingresada incorrecta, Seleccione una opcion correcta o la opcion 7 para salir.");        
+        };       
+    };
 }

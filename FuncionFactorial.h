@@ -1,15 +1,16 @@
 int factoreal(int A, int B){
-    int fact = 1;
-
+    int factA = 1;
+    int factB= 1;
 
     for (A; A > 1; A--){
-        fact = fact *A;
+        factA = factA *A;
     };
 
-    printf("El factoreal de %d = %d\n",A, fact);
+    printf("El factoreal de %d = %d\n",A, factA);
     
     for (B; B > 1; B--){
-        fact = fact *B;
+        factB = factB *B;
     };
-    printf("El factoreal de %d = %d\n",B, fact);
+    printf("El factoreal de %d = %d\n",B, factB);
+    
 }
