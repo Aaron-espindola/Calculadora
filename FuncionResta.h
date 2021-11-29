@@ -1,8 +1,5 @@
-int restarNumeros(int A,int B){
-    printf("Funcion Resta: \n");
+int restarNumeros(int numeroValido1,int numeroValido2){
 
-    int restarNumeros = A-B;
-    printf("La resta de los numeras da como resultado: %d \n",restarNumeros);
-
-
+    int resultadoResta = numeroValido1 - numeroValido2;
+    return resultadoResta;
 }

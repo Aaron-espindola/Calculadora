@@ -15,6 +15,5 @@ int menu(){
         printf("**********************************************\n");
         printf("\n");
         printf("\n");
-        printf("** Elija una opcion:                         \n"); 
-               
+        printf("** Elija una opcion:                         \n");     
 }

@@ -1,8 +1,5 @@
-int multiplicarNumeros(int A,int B){
-    printf("Funcion Multiplicacion: \n");
+int multiplicarNumeros(int numeroValido1, int numeroValido2){
 
-    int multiplicarNumeros= A*B;
-    printf("La multiplicacion de los numeras da como resultado: %d \n",multiplicarNumeros);
-
-
+    int resultadoMulti= numeroValido1 * numeroValido2;
+    return resultadoMulti;
 }

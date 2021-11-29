@@ -1,6 +1,5 @@
-void dividirNumeros(float A,float B){
-    printf("Funcion Division: \n");
-    float sumaNumeros= A/B;
+int dividirNumeros(int numeroValido1,int numeroValido2){
 
-    printf("La divison de los numeras da como resultado: %2.2f \n",sumaNumeros);  
+    int restoDivision = numeroValido1 / numeroValido2;   
+    return restoDivision;
 }
